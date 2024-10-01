@@ -21,6 +21,18 @@ function type() {
   }
 }
 
+
+  window.addEventListener('scroll', function() {
+    const navbar = document.querySelector('.navbar');
+    if (window.scrollY > 50) { // Change value based on when you'd like the background to change
+      navbar.classList.add('scrolled');
+    } else {
+      navbar.classList.remove('scrolled');
+    }
+  });
+
+
+
 function deleteText() {
   if (letterIndex > 0) {
     typingElement.textContent = phrases[phraseIndex].substring(
@@ -109,29 +121,5 @@ function nextTestimony() {
 setInterval(nextTestimony, 5000);
 
 
-
-const track = document.querySelector('.sponsor-track');
-let scrollSpeed = 1; // Speed of scrolling
-
-function moveLogos() {
-    // Get the current transform value
-    let currentTransform = getComputedStyle(track).getPropertyValue('transform');
-
-    // If the transform is none (first time), start at 0
-    let translateX = currentTransform === 'none' ? 0 : parseFloat(currentTransform.split(',')[4]);
-
-    // Move the track left
-    track.style.transform = `translateX(${translateX - scrollSpeed}px)`;
-
-    // If the entire first logo is out of view, reset
-    if (Math.abs(translateX) >= track.children[0].offsetWidth) {
-        track.appendChild(track.children[0]); // Move the first logo to the end
-        track.style.transform = 'translateX(0)'; // Reset translation
-    }
-
-    requestAnimationFrame(moveLogos); // Loop the animation
-}
-
-moveLogos();
 
 
