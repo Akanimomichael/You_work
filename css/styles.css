@@ -267,7 +267,7 @@ body {
     display: none;
   }
   .hero {
-    background-image: url("../asset/hero/bgMobile.jpg"); /* Background for mobile */
+    background-image: url("../asset/hero/bg-mobile.jpg"); /* Background for mobile */
   }
 }
 
