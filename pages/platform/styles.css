@@ -1,0 +1,605 @@
+/* Hero Section Styles */
+.hero-section {
+  background: linear-gradient(135deg, #061afc, #040442);
+  padding: 80px 20px;
+  padding-top: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  color: white;
+}
+
+.hero-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+  gap: 2rem;
+}
+
+.hero-text {
+  max-width: 600px;
+}
+
+.hero-text h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.btn {
+  background-color: #ff9900;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #e68a00;
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-text h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+  }
+
+  .hero-image {
+    margin-top: 2rem;
+  }
+
+  .hero-image img {
+    max-width: 80%;
+  }
+}
+
+/* Info Section Styles */
+.info-section {
+  /* background-color: #f4f9ff;  */
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.info-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+  gap: 2rem;
+}
+
+.info-image {
+  max-width: 50%; /* Take up half the width for the image on larger screens */
+}
+
+.info-image img {
+  max-width: 100%;
+  border-radius: 10px;
+  /* box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); */
+}
+
+.info-text {
+  max-width: 50%; /* Take up half the width for the text on larger screens */
+  color: #333; /* Darker text for contrast */
+  padding: 20px;
+  /* background-color: #fff; */
+  border-radius: 8px;
+  /* box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);  */
+}
+
+.info-text h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #1a75ff; /* Bright blue for the heading */
+  margin-bottom: 1.5rem;
+  letter-spacing: 1px;
+}
+
+.info-text p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #555; /* Slightly lighter text for paragraph */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .info-content {
+    flex-direction: column-reverse; /* Stack the text on top of the image */
+  }
+
+  .info-text {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .info-text h2 {
+    font-size: 2rem;
+  }
+
+  .info-text p {
+    font-size: 1rem;
+  }
+
+  .info-image img {
+    max-width: 80%; /* Reduce image size on smaller screens */
+    margin-bottom: 2rem; /* Add margin below the image for spacing */
+  }
+}
+
+/* Details Section Styles */
+.details-section {
+  background-color: #f9f9f9; /* Light background */
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.details-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+  gap: 2rem;
+}
+
+/* Text and List Styling */
+.details-text {
+  max-width: 50%; /* Take up half the width for the text on larger screens */
+}
+
+.details-text h2 {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #1a75ff;
+  margin-bottom: 1.5rem;
+  letter-spacing: 1px;
+}
+
+.details-text ul {
+  list-style: none; /* Remove default list styling */
+  padding: 0;
+}
+
+.details-text li {
+  font-size: 1.2rem;
+  color: #555;
+  line-height: 1.8;
+  font-weight: bold;
+  margin: 1rem 0;
+  display: flex;
+  align-items: center;
+}
+
+.details-text li i {
+  color: #1aff57; /* Icon color */
+  margin-right: 10px; /* Space between icon and text */
+  font-size: 1.5rem;
+}
+
+/* Image Styling */
+.details-image {
+  max-width: 50%; /* Take up half the width for the image on larger screens */
+}
+
+.details-image img {
+  max-width: 100%;
+  border-radius: 10px;
+  /* box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); Subtle shadow for depth */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .details-content {
+    flex-direction: column; /* Stack the image below the text */
+    text-align: center; /* Center align text for smaller screens */
+  }
+
+  .details-text {
+    max-width: 100%;
+  }
+
+  .details-image {
+    max-width: 80%; /* Reduce image size on smaller screens */
+    margin-top: 2rem;
+  }
+}
+
+/* How It Works Section Styles */
+.how-it-works {
+  padding: 60px 20px;
+  background-color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+.how-it-works h2 {
+  font-size: 2.5rem;
+  color: #1a75ff;
+  margin-bottom: 2rem;
+  text-align: left;
+  width: 50%;
+  /* border: 2px solid red; */
+}
+
+.how-it-works-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+  gap: 2rem;
+}
+
+/* Image Styles */
+.how-it-works-image {
+  flex: 1;
+}
+
+.how-it-works-image img {
+  max-width: 100%;
+  border-radius: 10px;
+  /* box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); */
+}
+
+/* Text Container */
+.how-it-works-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* Scrollable Content */
+.scrollable-content {
+  max-height: 300px;
+  overflow-y: scroll; /* Enable scrolling */
+  padding-right: 10px; /* Padding to prevent content cutoff */
+}
+
+/* Hide scrollbar for Webkit browsers (Chrome, Safari, etc.) */
+.scrollable-content::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for Firefox */
+.scrollable-content {
+  scrollbar-width: none; /* Firefox */
+}
+
+/* Ensure content still scrolls even when the scrollbar is hidden */
+.scrollable-content {
+  -ms-overflow-style: none; /* IE and Edge */
+}
+
+.scrollable-content h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #1a75ff;
+  margin-bottom: 1rem;
+}
+
+.scrollable-content p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+/* Button Styles */
+.how-it-works-text .btn {
+  background-color: #1a75ff;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.how-it-works-text .btn:hover {
+  background-color: #004aad;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .how-it-works-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .how-it-works-image {
+    order: 2;
+    margin-top: 2rem;
+  }
+
+  .scrollable-content {
+    max-height: 200px; /* Adjust scrollable height for smaller screens */
+  }
+
+  .how-it-works-text {
+    align-items: center;
+  }
+}
+
+/* Ready to Level Up Section Styles */
+.level-up-section {
+  padding: 50px 20px;
+  background-color: #f0f4ff; /* Light blue background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.level-up-content {
+  display: flex;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+  gap: 1.5rem;
+  padding: 20px;
+  background-color: #fff;
+  border: 2px solid greenyellow;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Icon Div */
+.icon-div {
+  flex: 0 0 100px; /* Fix width of icon */
+}
+
+.icon-div img {
+  width: 100%;
+  max-width: 100px;
+  display: block;
+}
+
+/* Text Div */
+.text-div {
+  flex: 1;
+}
+
+.text-div h2 {
+  font-size: 1.8rem;
+  color: #1a75ff;
+  margin-bottom: 0.8rem;
+}
+
+.text-div p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Button Div */
+.btn-div {
+  flex: 0 0 auto;
+}
+
+.btn-div .btn {
+  background-color: #1a75ff;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn-div .btn:hover {
+  background-color: #004aad;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .level-up-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .icon-div, .btn-div {
+    margin-bottom: 1rem;
+  }
+}
+
+/* Connect Section */
+.connect-section {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+}
+
+.connect-section h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #1a75ff;
+  margin-bottom: 2rem;
+}
+
+.connect-items {
+  display: flex;
+  justify-content: space-between;
+  /* margin: 2px auto; */
+  margin: 0 auto;
+  padding: 0 20px;
+  /* border: 2px solid red; */
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  font-size: 24px;
+  color: #1a75ff;
+  margin-right: 10px;
+}
+
+.item p {
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .connect-items {
+    flex-direction: column;
+    align-items: left;
+  }
+
+  .column {
+    width: 100%;
+    align-items: left;
+  }
+
+  .item {
+    justify-content: left;
+  }
+}
+
+/* FAQ Section */
+.faq-section {
+  padding: 60px 20px;
+  background-color: #f5f5f5;
+}
+
+.faq-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #1a75ff;
+  margin-bottom: 2.5rem;
+  font-weight: 600;
+}
+
+/* Accordion Styles */
+.accordion {
+  /* max-width: 800px; */
+  margin: 0 auto;
+}
+
+.accordion-item {
+  background-color: #fff;
+  margin-bottom: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.accordion-header {
+  /* background-color: #1a75ff; */
+  /* color: white; */
+  cursor: pointer;
+  padding: 15px 20px;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.accordion-header h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.accordion-header:hover {
+  /* background-color: #165bbd; Darker shade on hover */
+}
+
+.accordion-icon {
+  font-size: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+/* Arrow down to up transition */
+.accordion-item.active .accordion-icon {
+  transform: rotate(180deg); /* Rotates to point upwards */
+}
+
+.accordion-body {
+  display: none;
+  padding: 15px;
+  background-color: #fff;
+  color: #333;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.accordion-body p {
+  margin: 0;
+}
+
+/* Active accordion body */
+.accordion-item.active .accordion-body {
+  display: block;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .accordion-header {
+    font-size: 1rem;
+    padding: 12px 15px;
+  }
+
+  .accordion-body {
+    padding: 12px;
+  }
+}
+

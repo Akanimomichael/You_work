@@ -121,5 +121,13 @@ function nextTestimony() {
 setInterval(nextTestimony, 5000);
 
 
+ // Dropdown toggle for mobile screens
+    const dropdowns = document.querySelectorAll('.dropdown');
 
+    dropdowns.forEach(dropdown => {
+        dropdown.addEventListener('click', function() {
+            const dropdownContent = this.querySelector('.dropdown-content');
+            dropdownContent.classList.toggle('show');
+        });
+    });
 
