@@ -1,10 +1,18 @@
 // Mobile menu toggle
 const menuIcon = document.getElementById("menu-icon");
+// const navLinks = document.querySelector(".nav-links");
+
+// menuIcon.addEventListener("click", () => {
+//   navLinks.classList.toggle("nav-active");
+// });
+// Nav bar
+const hamburger = document.querySelector(".hamburger");
 const navLinks = document.querySelector(".nav-links");
 
-menuIcon.addEventListener("click", () => {
-  navLinks.classList.toggle("nav-active");
+hamburger.addEventListener("click", () => {
+  navLinks.classList.toggle("active");
 });
+
 
 const typingElement = document.querySelector(".typing");
 const phrases = ["identities |", "strategy |"];
@@ -22,14 +30,14 @@ function type() {
 }
 
 
-  window.addEventListener('scroll', function() {
-    const navbar = document.querySelector('.navbar');
-    if (window.scrollY > 50) { // Change value based on when you'd like the background to change
-      navbar.classList.add('scrolled');
-    } else {
-      navbar.classList.remove('scrolled');
-    }
-  });
+  // window.addEventListener('scroll', function() {
+  //   const navbar = document.querySelector('.navbar');
+  //   if (window.scrollY > 50) { // Change value based on when you'd like the background to change
+  //     navbar.classList.add('scrolled');
+  //   } else {
+  //     navbar.classList.remove('scrolled');
+  //   }
+  // });
 
 
 
